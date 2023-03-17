@@ -37,7 +37,7 @@ const createDeal = async (req, res) => {
 }
 
 const allDeal = async (req, res) => {
-    const deals = await dealModel.findAll();
+    const deals = await dealModel.findAll({ limit: 10 });
     res.status(200).json(deals)
 }
 
@@ -53,7 +53,7 @@ const createClaimedDeal = async (req, res) => {
     }
 }
 const allClaimedDeal = async (req, res) => {
-    const ClaimedDeals = await ClaimedDealModel.findAll();
+    const ClaimedDeals = await ClaimedDealModel.findAll({ limit: 10 });
     res.status(200).json(ClaimedDeals)
 }
 
