@@ -2,14 +2,14 @@
  
 module.exports=(sequelize, DataTypes)=>{
     const ClaimedDeals= sequelize.define('ClaimedDeals',{
-        // User_ID:{
-        //     type: DataTypes.INTEGER,
-        //     allowNull: false,
-        //  },
-        // Deal_ID:{
-        //     type: DataTypes.INTEGER,
-        //     allowNull: false,
-        //  },
+        User_ID:{
+            type: DataTypes.INTEGER,
+            allowNull: false,
+         },
+        Deal_ID:{
+            type: DataTypes.INTEGER,
+            allowNull: false,
+         },
          Server_DateTime: {
             type: DataTypes.DATE,
             defaultValue: new Date(Date.now()),

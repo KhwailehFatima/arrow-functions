@@ -18,7 +18,7 @@ const addUser = async (req, res) => {
 }
 
 const allUser = async (req, res) => {
-    const users = await userModel.findAll({ limit: 10 });
+    const users = await userModel.findAll( );
     res.status(200).json(users)
 };
 
@@ -37,7 +37,7 @@ const createDeal = async (req, res) => {
 }
 
 const allDeal = async (req, res) => {
-    const deals = await dealModel.findAll({ limit: 10 });
+    const deals = await dealModel.findAll();
     res.status(200).json(deals)
 }
 
@@ -53,7 +53,7 @@ const createClaimedDeal = async (req, res) => {
     }
 }
 const allClaimedDeal = async (req, res) => {
-    const ClaimedDeals = await ClaimedDealModel.findAll({ limit: 10 });
+    const ClaimedDeals = await ClaimedDealModel.findAll( );
     res.status(200).json(ClaimedDeals)
 }
 

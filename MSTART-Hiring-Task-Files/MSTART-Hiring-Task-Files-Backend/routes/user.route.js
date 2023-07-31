@@ -3,6 +3,7 @@
 const express = require('express');
 const { addUser, allUser, deleteUser, createDeal, allDeal, createClaimedDeal, allClaimedDeal } = require('../controllers/user.controllers');
 const router = express.Router();
+ 
 
 
 // router.post('adduser', uploadItemImages.array( "uploadedImages", 4 ), addUser)
